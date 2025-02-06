@@ -1,4 +1,7 @@
 function firstWord(s) {
+    if(s=="" & s!==" "){
+        return s;
+    }
     let words = s.split(" "); 
     if(words[0] == ''){
         return words[1]
