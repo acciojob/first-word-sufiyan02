@@ -1,15 +1,14 @@
 function firstWord(s) {
   // your code here
- if (!str) {
+   if (s == "") {      
     return "";
   }
 
-  const words = str.split(" ");
+  const words = s.split(" "); 
 
-  if (words.length === 0) { //Handles cases where string might have only spaces
-      return "";
+  if (words.length === 0) { 
+    return "";
   }
-
   return words[0];
 }
 
@@ -17,3 +16,5 @@ function firstWord(s) {
 
 const s = prompt("Enter String:");
 alert(firstWord(s));
+
+
