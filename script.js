@@ -1,19 +1,12 @@
 function firstWord(s) {
-  // your code here
-if (!s) {
-    return "";
+    let words = s.split(" "); 
+    if(words[0] == ''){
+        return words[1]
+    }
+    return words[0]
   }
-  let words = s.split(" "); 
-
-  if (words.length === 0) { 
-    return "";
-  }
-  return words[0];
-}
-
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
-
-
+  const s = prompt("Enter String:");
+  alert(firstWord(s));
+  
+  
+  
