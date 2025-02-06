@@ -1,10 +1,7 @@
 function firstWord(s) {
   // your code here
-   if (s == "") {      
-    return "";
-  }
 
-  const words = s.split(" "); 
+  let words = s.split(" "); 
 
   if (words.length === 0) { 
     return "";
