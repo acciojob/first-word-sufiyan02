@@ -1,15 +1,16 @@
 function firstWord(s) {
   // your code here
-	   return "";
+ if (!str) {
+    return "";
   }
 
-  const firstSpaceIndex = str.indexOf(" ");
+  const words = str.split(" ");
 
-  if (firstSpaceIndex === -1) {
-    return str;
-  } else {
-    return str.substring(0, firstSpaceIndex);
+  if (words.length === 0) { //Handles cases where string might have only spaces
+      return "";
   }
+
+  return words[0];
 }
 
 // Do not change the code below
